@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int n;
+int arr[20];
+int i,j,f=1,sum=0;
+printf("enter n value\n");
+scanf("%d",&n);
+printf("enter elements into array\n");
+for(i=0;i<n;i++)
+{
+scanf("%d",&arr[i]);
+}
+for(i=0;i<n;i++)
+{
+f=f*arr[i];
+sum=sum+f;
+printf("factorial value of arr[%d]=%d\n",i,f);
+}
+printf("sum of factorial values of all elements=%d",sum);
+return 0;
+}
